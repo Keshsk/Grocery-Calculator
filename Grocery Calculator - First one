@@ -2,21 +2,22 @@ print('Grocery Calculator')
 
 print('What grocery should I buy? ')
 
-gr1 = 'apples'
-gr2 = 'kiwi'
-gr3 = 'bananas'
+gr1 = 'apples: '
+gr2 = 'kiwi: '
+gr3 = 'bananas: '
 
-print('price for: ')
+print('price for ')
 price_1 = float(input(gr1))
-print('price for: ')
-price_2 = float(input(gr2))
-print('price for: ')
-price_3 = float(input(gr3))
-
 print(gr1)
 qty_1 = float (input('quantity: '))
+
+print('price for ')
+price_2 = float(input(gr2))
 print(gr2)
 qty_2 = float(input('quantity: '))
+
+print('price for ')
+price_3 = float(input(gr3))
 print(gr3)
 qty_3 = float(input('quantity: '))
 
