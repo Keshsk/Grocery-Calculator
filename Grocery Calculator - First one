@@ -1,6 +1,8 @@
 print('Grocery Calculator')
-
 print('What grocery should I buy? ')
+
+budget_for_shopping = 'Insert budget for shopping: '
+budget = float(input(budget_for_shopping))
 
 gr1 = 'apples: '
 gr2 = 'kiwi: '
@@ -9,7 +11,7 @@ gr3 = 'bananas: '
 print('price for ')
 price_1 = float(input(gr1))
 print(gr1)
-qty_1 = float (input('quantity: '))
+qty_1 = float(input('quantity: '))
 
 print('price for ')
 price_2 = float(input(gr2))
@@ -21,10 +23,18 @@ price_3 = float(input(gr3))
 print(gr3)
 qty_3 = float(input('quantity: '))
 
-prices = {gr1: price_1, gr2: price_2, gr3: price_3,}
+prices = {gr1: price_1, gr2: price_2, gr3: price_3, }
 my_purchase = {gr1: qty_1, gr2: qty_2, gr3: qty_3}
 grocery_bill = sum(prices[fruit] * my_purchase[fruit]
                    for fruit in my_purchase)
-print ('MY GROCERY BILL IS:')
+
+print('MY GROCERY BILL IS:')
 print(grocery_bill, '$')
-print('THANK YOU!')
+print( "YOUR CHANGE :")
+balance = (budget - int(grocery_bill))
+print(balance)
+if balance <= 0:
+    print('Yoa are overdraft !!! ')
+
+print('THANK YOU FOR SHOPPING !')
+print('Vladimir Bozhinovski', 'Skopje')
