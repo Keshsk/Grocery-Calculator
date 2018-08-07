@@ -37,4 +37,4 @@ if balance <= 0:
     print('Yoa are overdraft !!! ')
 
 print('THANK YOU FOR SHOPPING !')
-print('Vladimir Bozhinovski', 'Skopje')
+print('Vladimir B.', 'Skopje')
